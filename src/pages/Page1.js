@@ -151,7 +151,7 @@ body.modo-oscuro .acciones button {
 document.head.appendChild(style);
 
 const dispatch = useDispatch();
-  const [modoOscuro, setModoOscuro] = useState(false);
+  const [modoOscuro] = useState(false);
 
   useEffect(() => {
     dispatch(loadTasksFromStorage());
