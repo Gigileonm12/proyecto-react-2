@@ -13,7 +13,7 @@ function AppContent() {
 useEffect(() => {
   document.body.classList.remove('light-theme', 'dark-theme');
   document.body.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme');
-}, [theme]);
+}, []);
 
   return (
     <ConfigProvider
