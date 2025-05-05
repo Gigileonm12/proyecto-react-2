@@ -23,5 +23,5 @@ jobs:
       - run: npm run build --if-present
       - name: Instalar Surge
         run: npm install --global surge
-      - name: Deploy to Surge
-        run: surge ./build ${{ secrets.SURGE_URL }} --token ${{ secrets.SURGE_TOKEN }}
+      - name: Deploy to Surge 
+        run: surge ./build https://mis-tareas-final-react.surge.sh --token eef2f81da8f3138b9cf887d0a197b49c
